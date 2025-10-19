@@ -1,3 +1,5 @@
+//1 - X²/2! + X⁴/4! - ....
+
 #include<stdio.h>
 #include <math.h> 
 
@@ -24,6 +26,7 @@ int main(){
         k=k+2;
     }
     printf("The sum is%f",sum);
+    return 0;
 }
 
 int factorial(int a){
