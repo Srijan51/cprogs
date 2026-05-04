@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-
-
 int main(){
     int n;
     printf("Enter the number ");
@@ -13,10 +11,5 @@ int main(){
     printf("The factorial of %d is %d",n,fact);
 
     return 0;
-
-}
-
-void factorial(int a){
-    
 
 }
