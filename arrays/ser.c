@@ -10,7 +10,7 @@ int main(){
     for (int i=0;i<10;i++){
         total=total+x[i];
     }
-    for (int i=0;i<10;i++){```
+    for (int i=0;i<10;i++){
         printf("x[%d] = %f\n",i+1,x[i]);
     }
     printf("Total= %f",total);

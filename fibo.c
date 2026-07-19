@@ -1,24 +1,14 @@
 #include<stdio.h>
-
-void rec(int n);
-int s;
 int main(){
-    rec(0);
-
-    return 0;
-
-}
-int a=0;
-int b=1;
-
-void rec(int n){
-    if(n==10){
-        return;
+    int a=0,b=1;
+    int next=0;
+    int n;
+    printf("Enter the no of elements\n");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        printf("%d ",a);
+        next=a+b;
+        a=b;
+        b=next;
     }
-    s=a+b;
-    a=b;
-    b=s;
-    printf("%d ",s);
-    rec(n+1);
-    
 }

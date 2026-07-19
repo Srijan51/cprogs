@@ -1,18 +1,22 @@
 #include <stdio.h>
 
-void rec(int n);
+int rec(int n);
 
 int main(){
-    rec(5);
+    int n;
+    scanf("%d", &n);
+    printf("%d",rec(n));
+    
     return 0;
 
 }
 
-void rec(int n){
-    if(n==0){
-        return;
+int rec(int n){
+    int sum=0;
+    if(n==1)
+        return 1;
+    else{
+        return n+rec(n-1);
     }
-    printf("Hello World\n");
-    rec(n-1);
     
 }
